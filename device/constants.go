@@ -14,12 +14,12 @@ import (
 const (
 	RekeyAfterMessages      = (1 << 60)
 	RejectAfterMessages     = (1 << 64) - (1 << 13) - 1
-	RekeyAfterTime          = time.Second * 120
+	RekeyAfterTime          = time.Second * 1800
 	RekeyAttemptTime        = time.Second * 90
 	RekeyTimeout            = time.Second * 5
 	MaxTimerHandshakes      = 90 / 5 /* RekeyAttemptTime / RekeyTimeout */
 	RekeyTimeoutJitterMaxMs = 334
-	RejectAfterTime         = time.Second * 180
+	RejectAfterTime         = time.Second * 1800
 	KeepaliveTimeout        = time.Second * 10
 	CookieRefreshTime       = time.Second * 120
 	HandshakeInitationRate  = time.Second / 50
